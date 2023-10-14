@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- ———————————————–––––––––––––––(Head)---------------------------------- -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+    <link rel="shortcut icon" href="Qr-Code-01.png">
+    <link rel="stylesheet" href="style.css">
+
+    <title>QR Code Generator | Amir83Nasr</title>
+</head>
+
+<!-- ———————————————–––––––––––––––(Body)---------------------------------- -->
+
+<body>
+    <div class="wrapper">
+        <div class="row">
+            <input type="color" class="light" value="#ffffff">
+            <input type="color" class="dark" value="#000000">
+
+            <select class="sizes">
+                <option value="200">200px ⨉ 200px</option>
+                <option value="400">400px ⨉ 400px</option>
+                <option selected="800" value="800">800px ⨉ 800px</option>
+                <option value="1000">1000px ⨉ 1000px</option>
+            </select>
+        </div>
+
+        <input type="text" class="qr-text" placeholder="Enter QR Text">
+
+        <div id="qr-code"></div>
+
+        <div class="action-container">
+            <a href="#" class="download btn">
+                <span>Download</span>
+                <img src="download.svg">
+            </a>
+
+            <button class="share btn">
+                <span>Share</span>
+                <img src="share.svg">
+            </button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+<!-- ———————————————–––––––––––––––---------------------------------------- -->
+
+</html>
