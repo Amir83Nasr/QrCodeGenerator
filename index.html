@@ -9,7 +9,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 
-    <link rel="shortcut icon" href="Qr-Code-01.png">
+    <link rel="shortcut icon" href="image/Qr-Code-01.png">
     <link rel="stylesheet" href="style.css">
 
     <title>QR Code Generator | Amir83Nasr</title>
@@ -18,40 +18,43 @@
 <!-- ———————————————–––––––––––––––(Body)---------------------------------- -->
 
 <body>
-    <div class="wrapper">
+    <section>
         <div class="row">
             <input type="color" class="light" value="#ffffff">
-            <input type="color" class="dark" value="#000000">
+            <input type="color" class="dark">
 
             <select class="sizes">
-                <option value="200">200px ⨉ 200px</option>
-                <option value="400">400px ⨉ 400px</option>
-                <option selected="800" value="800">800px ⨉ 800px</option>
-                <option value="1000">1000px ⨉ 1000px</option>
+                <option value="100">100px × 100px</option>
+                <option value="200">200px × 200px</option>
+                <option value="300">300px × 300px</option>
+                <option selected value="400">400px × 400px</option>
+                <option value="500">500px × 500px</option>
+                <option value="600">600px × 600px</option>
+                <option value="700">700px × 700px</option>
+                <option value="800">800px × 800px</option>
+                <option value="900">900px × 900px</option>
+                <option value="1000">1000px × 1000px</option>
             </select>
         </div>
 
         <input type="text" class="qr-text" placeholder="Enter QR Text">
-
         <div id="qr-code"></div>
 
         <div class="action-container">
-            <a href="#" class="download btn">
+            <a href="#" class="download btn" download="QRCode">
                 <span>Download</span>
-                <img src="download.svg">
+                <img src="image/download.svg" alt="">
             </a>
-
-            <button class="share btn">
+            <button class="btn share-btn">
                 <span>Share</span>
-                <img src="share.svg">
+                <img src="image/share.svg" alt="">
             </button>
         </div>
+    </section>
 
-    </div>
+    <!-- ———————————————–––––––––––––––---------------------------------------- -->
 
     <script src="script.js"></script>
 </body>
-
-<!-- ———————————————–––––––––––––––---------------------------------------- -->
 
 </html>
